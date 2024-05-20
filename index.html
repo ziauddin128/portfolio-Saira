@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <!-- box icon -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- swiper JS -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body class="bg-background">
+
+    <!-- header -->
+    <header id="large_header" class="fixed top-0 left-0 right-0 md:py-1 transition-all duration-300">
+
+        <nav class="max-w-7xl bg-gray-800 md:bg-transparent mx-auto p-5">
+
+          <div class="flex items-center justify-between">
+            <a href="#" class="flex items-center gap-4 text-white font-semibold font-Montserrat text-lg">
+                <img src="image/logo.svg" class="w-10" alt=""> 
+                <span>Portfolio</span>
+            </a>
+    
+            <!-- menu for large device -->
+            <div class="hidden md:flex space-x-14">
+                <a href="#home" class="text-primary text-[16px] font-semibold hover:text-primary">Home</a>
+                <a href="#projects" class="text-white text-[16px] font-semibold hover:text-primary">Projects</a>
+                <a href="#resume" class="text-white text-[16px] font-semibold hover:text-primary">Resume</a>
+            </div>
+
+            <!-- menu btn, for small device -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white text-3xl"><i class='bx bx-menu'></i></button>
+            </div>
+
+          </div>
+
+          <!-- mobile menu -->
+          <div id="mobile-menu" class="hidden md:hidden pt-[12px]">
+            <a href="#home" class="text-primary text-[16px] font-semibold hover:text-gray-300 block py-2 hover:bg-gray-700">Home</a>
+            <a href="#projects" class="text-white text-[16px] font-semibold hover:text-gray-300 block py-2 hover:bg-gray-700">Projects</a>
+            <a href="#resume" class="text-white text-[16px] font-semibold hover:text-gray-300 block py-2 hover:bg-gray-700">Resume</a>
+          </div>
+
+        </nav>
+
+    </header>
+    <!-- /header -->
+
+    <!-- banner -->
+    <section class="max-w-7xl mx-auto mt-[100px] px-5">
+        <div class="py-10 text-white flex flex-col md:flex-row items-center justify-between gap-4">
+
+            <!-- left side -->
+            <div class="md:w-1/2">
+                <p class="text-lg font-Inter mb-[20px]">Hello, <span class="text-primary">I’m</span></p>
+                <h1 class="text-4xl text-primary font-bold tracking-wide font-Inter mb-[10px]">Saira Kabir</h1>
+                <h2 class="text-xl font-Montserrat mb-[15px]">UI/UX Designer & Graphic Designer</h2>
+                <p class="text-md font-Inter w-3/4 leading-8 text-justify mb-[18px]">I am committed to finding innovative solutions and continuously experimenting to help my clients achieve their goals.</p>
+
+                <a href="javascript:void(0)" class="inline-block bg-primary text-white text-md font-semibold py-[10px] px-[26px] rounded-md shadow-sm hover:bg-indigo-600">Let's Talk</a>
+
+                <div class="mt-12 flex items-center gap-4">
+                    <p class="text-md">Check Out My: </p>
+                    <div class="flex space-x-3">
+                        <a href="#"><img src="image/instagram.svg" class="h-8 w-8" alt=""></a>
+                        <a href="#"><img src="image/linkedin.svg" class="h-8 w-8" alt=""></a>
+                        <a href="#"><img src="image/twitter.svg" class="h-8 w-8" alt=""></a>
+                        <a href="#"><img src="image/behance.svg" class="h-8 w-8" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right side -->
+            <div class="md:w-1/2 order-first md:order-none">
+                <img src="image/profile.svg" class="w-full md:ml-20" alt="">
+            </div>
+
+        </div>
+    </section>
+    <!-- /banner -->
+
+    <!-- service -->
+    <section class="max-w-7xl mx-auto pt-[40px] pb-[40px] px-5">
+        <div class="text-white text-center">
+            <p class="text-xl mb-3 font-medium">My Services</p>
+            <h1 class="text-3xl text-primary font-semibold">What I Do</h1>
+        </div>
+
+        <!-- service card -->
+        <div class="mt-[50px] flex flex-col md:flex-row items-center justify-around gap-4">
+
+            <div class="max-w-[354px] px-5 py-8 rounded-xl text-white border border-primary shadow-[#5dadec3b] shadow-xl cursor-pointer">
+                <img src="image/graphic_design.svg" alt="" class="w-[100px] mb-8 mx-auto">
+                <h1 class="text-xl font-semibold font-Montserrat text-center mb-4">Graphic Designer</h1>
+                <p class="text-justify normal-case text-md">strive to create visually impact designs that effectively communicate ,messages & meet their unique needs.</p>
+            </div>
+
+            <div class="max-w-[354px] px-5 py-8 rounded-xl text-white border border-primary shadow-[#5dadec3b] shadow-xl cursor-pointer">
+                <img src="image/web_design.svg" alt="" class="w-[100px] mb-8 mx-auto">
+                <h1 class="text-xl font-semibold font-Montserrat text-center mb-4">Web Designer</h1>
+                <p class="text-justify normal-case text-md">delivering intuitive, user-centered designs that bring my clients' vision to life by combining technical expertise</p>
+            </div>
+
+            <div class="max-w-[354px] px-5 py-8 rounded-xl text-white border border-primary shadow-[#5dadec3b] shadow-xl cursor-pointer">
+                <img src="image/ux_design.svg" alt="" class="w-[100px] mb-8 mx-auto">
+                <h1 class="text-xl font-semibold font-Montserrat text-center mb-4">UI/UX Designer</h1>
+                <p class="text-justify normal-case text-md">passion for creating user-friendly experiences and a drive to stay current with the design trends & technologies to deliver designs.</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- /service -->
+
+    <!-- project -->
+    <section class="max-w-7xl mx-auto pt-[60px] pb-[40px] px-5">
+
+        <div class="text-center text-white">
+            <h1 class="text-3xl font-semibold mb-5">Recent <span class="text-primary">Project</span></h1>
+            <p class="text-md md:w-3/4 mx-auto">I bring a passion for creating user-friendly experiences and a drive  design trends and technologies to deliver top-notch designs that meet needs and exceed their expectations
+            </p>
+        </div>
+
+        <!-- project cards -->
+        <div class="mt-12 flex flex-col md:flex-row gap-5 items-center justify-between">
+
+            <div class="md:w-[741px] mx-auto p-3 md:p-0 rounded-2xl border border-primary shadow-[#5dadec3b] shadow-xl cursor-pointer overflow-hidden">
+                <img src="image/project1.svg" class="w-full md:h-96 hover:scale-125 transition-all duration-300 cursor-pointer" alt="">
+            </div>
+
+            <div class="md:w-[741px] mx-auto p-3 md:p-0 rounded-2xl border border-primary shadow-[#5dadec3b] shadow-xl cursor-pointer overflow-hidden">
+                <img src="image/project2.svg" class="w-full md:h-96 hover:scale-125 transition-all duration-300 cursor-pointer" alt="">
+            </div>
+
+        </div>
+
+    </section>
+    <!-- /project -->
+
+    <!-- testimonial -->
+    <section class="max-w-7xl mx-auto pt-[60px] pb-[40px] px-5">
+
+        <div class="text-center text-white">
+            <p class="text-lg font-medium mb-5">Testimonial</p>
+            <h1 class="text-3xl font-semibold text-primary">What Our Customer Say</h1>
+        </div>
+
+        <div class="swiper mySwiper mt-10">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide text-white">
+                <img src="image/review1.svg" alt="">
+                <p class="text-[16px] my-3 text-justify">She listened to my ideas and provided valuable input, which helped to create a user interface that was both aesthetically pleasing and easy to use</p>
+                <h1 class="mt-5 font-bold text-primary text-2xl">Mike Torello</h1>
+                <h5 class="text-sm">Executive Engineer</h5>
+            </div>
+
+            <div class="swiper-slide text-white">
+                <img src="image/review2.svg" alt="">
+                <p class="text-[16px] my-3 text-justify">I recently worked with Saira on a project and was extremely impressed with their creativity and attention to detail. She listened to my ideas and provided valuable input, which helped to create a UI that was both aesthetically pleasing and easy to use.</p>
+                <h1 class="mt-5 font-bold text-primary text-2xl">Rick Wright</h1>
+                <h5 class="text-sm">Executive Engineer</h5>
+            </div>
+
+            <div class="swiper-slide text-white">
+                <img src="image/review3.svg" alt="">
+                <p class="text-[16px] my-3 text-justify">Her design skills are top-notch and effectively communicated with our team throughout the project. I highly recommend her to anyone in need of a talented UI designer.
+                </p>
+                <h1 class="mt-5 font-bold text-primary text-2xl">Devon Miles</h1>
+                <h5 class="text-sm">Executive Engineer</h5>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+    <!-- testimonial -->
+    
+    <!-- footer -->
+    <section class="max-w-7xl mx-auto pt-[60px] pb-[40px] px-5">
+
+        <div class="flex flex-col md:flex-row w-full gap-10">
+
+            <div class="md:mb-12">
+                <a href="#" class="flex items-center gap-4 text-white font-semibold font-Montserrat text-lg">
+                    <img src="image/logo.svg" class="w-10" alt=""> 
+                    <span>Portfolio</span>
+                </a>
+            </div>
+
+            <div class="md:pl-12 w-full md:grid md:grid-cols-2 lg:grid-cols-3">
+
+                <div class="w-full">
+                    <h2 class="text-white text-md font-semibold">Company</h2>
+                    <a href="#" class="text-slate-300 text-sm block my-3">About Us</a>
+                    <a href="#" class="text-slate-300 text-sm block my-3">Why Choose Me</a>
+                    <a href="#" class="text-slate-300 text-sm block my-3">Pricing</a>
+                    <a href="#" class="text-slate-300 text-sm block my-3">Testimonial</a>
+                </div>
+
+                <div class="w-full">
+                    <h2 class="text-white text-md font-semibold">Resources</h2>
+                    <a href="#" class="text-slate-300 text-sm block my-3">Privacy Policy</a>
+                    <a href="#" class="text-slate-300 text-sm block my-3">Terms Condition</a>
+                    <a href="#" class="text-slate-300 text-sm block my-3">Blog</a>
+                    <a href="#" class="text-slate-300 text-sm block my-3">Contact Us</a>
+                </div>
+
+                <div class="w-full">
+                    <h2 class="text-white text-md font-semibold mb-5">Subscribe to our newsletter</h2>
+                    <div class="relative">
+                        <input type="text" class="w-full p-5 rounded-lg bg-[#2B2E3C] text-white" placeholder="Enter your email" name="" id="">
+                        <button type="submit" class="bg-primary py-3 px-6 absolute right-1 top-[50%] -translate-y-[50%] text-white rounded-lg">Subscribe</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- /footer -->
+
+    <!-- copyright -->
+    <div class="max-w-7xl mx-auto py-8">
+        <div class="flex justify-center items-center gap-5 text-primary">
+            <p>Copyright <i class='bx bx-copyright'></i> 2024</p>
+
+            <div class="flex items-center gap-3">
+                <a href="javascript:void(0)" class="text-primary"><img src="image/facebook.svg" class="w-5" alt=""></a>
+                <a href="javascript:void(0)" class="text-primary"><img src="image/twitter_blue.png" class="w-5" alt=""></a>
+                <a href="javascript:void(0)" class="text-primary"><img src="image/instagram_blue.svg" class="w-5" alt=""></a>
+                <a href="javascript:void(0)" class="text-primary"><img src="image/linkedin_blue.svg" class="w-5" alt=""></a>
+            </div>
+
+        </div>
+    </div>
+    <!-- /copyright -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    },
+    breakpoints: {
+    640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+    },
+    768: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+    },
+    1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+    },
+    },
+});
+</script>
+
+<script>
+    //small screen menu open close
+    var mobile_menu_btn = document.querySelector("#mobile-menu-button");
+    var mobile_menu = document.querySelector("#mobile-menu");
+    mobile_menu_btn.addEventListener("click", ()=>{
+        mobile_menu.classList.toggle("hidden")
+    })
+
+    //on scroll header color change
+    var large_header = document.querySelector("#large_header");
+    window.addEventListener("scroll", function()
+    {
+        var scrollY = window.scrollY;
+        
+        if(scrollY > 100)
+        {
+            large_header.style.background = "rgba(0,0,0,0.8)";
+        }
+        else 
+        {
+            large_header.style.background = "transparent";
+        }
+
+    })
+</script>
+</body>
+</html>
